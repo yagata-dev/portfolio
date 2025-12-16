@@ -1,0 +1,10 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cégep du Vieux Montréal logo">
+  <defs>
+    <linearGradient id="gradCVM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect x="12" y="12" width="96" height="96" rx="16" fill="url(#gradCVM)"/>
+  <path d="M36 84V42l12 18 12-18 12 18 12-18v42" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>
