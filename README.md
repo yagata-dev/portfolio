@@ -1,10 +1,6 @@
-# Astro Starter Kit: Minimal
+# Portfolio Website
 
-```sh
-npm create astro@latest -- --template minimal
-```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Minoru Yoshida's personal portfolio website built with Astro.
 
 ## 🚀 Project Structure
 
@@ -41,3 +37,13 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## 🚀 Deployment
+
+This site is automatically deployed to GitHub Pages when changes are pushed to the `main` branch. The deployment workflow:
+
+1. Builds the site using `npm run build`
+2. Uploads the `dist/` folder as an artifact
+3. Deploys to GitHub Pages at https://yagata-dev.github.io/portfolio
+
+To manually trigger a deployment, go to the Actions tab in GitHub and run the "Deploy to GitHub Pages" workflow.
