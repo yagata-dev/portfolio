@@ -40,7 +40,11 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
 ## 🚀 Deployment
 
-This site is automatically deployed to GitHub Pages when changes are pushed to the `main` branch. The deployment workflow:
+This site is configured for automatic deployment to GitHub Pages when changes are pushed to the `main` branch.
+
+**⚠️ Important:** Before the first deployment, you must enable GitHub Pages in your repository settings. See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed setup instructions.
+
+The deployment workflow:
 
 1. Builds the site using `npm run build`
 2. Uploads the `dist/` folder as an artifact
