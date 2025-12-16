@@ -1,6 +1,6 @@
 ---
-title: Minoru Yoshida
+title: Welcome to My Portfolio
 order: 1
 ---
 
-Montreal-based engineer working across software, embedded systems, and AI-assisted tools. I balance hands-on delivery (C/C++, Python, web) with research-flavored work in signal processing and human-centered interfaces, drawing on experience in labs, product teams, and live production environments.
+This is an Astro portfolio website template. Astro is a modern web framework that helps you build fast, content-focused websites. This template showcases sections for education, career, publications, and projects.

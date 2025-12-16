@@ -1,13 +1,13 @@
 {
-  "institution": "École de Technologie Supérieure",
-  "program": "M.Sc. in Software and Information Engineering",
-  "interval": "2025 – Present",
+  "institution": "Example University",
+  "program": "M.Sc. in Computer Science",
+  "interval": "2023 – Present",
   "logo": "/portfolio/logos/ets.svg",
   "topics": [
     "Machine learning",
-    "Phonology",
-    "Signal processing",
-    "Ultrasound imaging"
+    "Web development",
+    "Data science",
+    "Software engineering"
   ],
   "order": 1
 }

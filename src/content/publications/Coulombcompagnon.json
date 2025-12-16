@@ -1,10 +1,10 @@
 {
-  "title": "IEEE Publication",
-  "subtitle": "Details pending",
-  "description": "Link placeholder for IEEE Xplore paper; update title, venue, and year as needed.",
+  "title": "Example Technical Publication",
+  "subtitle": "Technical Conference 2025",
+  "description": "An example publication demonstrating technical writing and research contributions.",
   "interval": "2025",
   "logo": "/portfolio/logos/publication.svg",
-  "link": "https://ieeexplore.ieee.org/document/11030638",
+  "link": "https://example.com/publication",
   "order": 1,
-  "topics": ["Research", "IEEE"]
+  "topics": ["Research", "Technology"]
 }

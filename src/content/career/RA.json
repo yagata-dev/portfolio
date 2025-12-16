@@ -1,9 +1,9 @@
 {
-  "title": "Research Assistant",
-  "subtitle": "ÉTS · LATIS Lab",
-  "description": "Developed C++ acquisition software for synchronized ultrasound/audio data, automated MATLAB analysis, and managed end-to-end data lifecycle.",
-  "interval": "2023 – 2024",
+  "title": "Backend Developer",
+  "subtitle": "Example Company · Engineering Team",
+  "description": "Built and maintained backend services using Python and Node.js, implemented database solutions, and optimized application performance.",
+  "interval": "2021 – 2022",
   "logo": "/portfolio/logos/ets.svg",
   "order": 4,
-  "topics": ["MATLAB", "Python", "Signal analysis"]
+  "topics": ["Python", "Node.js", "Databases"]
 }

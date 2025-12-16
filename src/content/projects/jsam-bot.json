@@ -1,9 +1,9 @@
 {
-  "title": "Japanese Seinen Association of Montreal",
-  "subtitle": "Discord Bot & Companion Web App",
-  "description": "Automated event management and staff coordination with a Python Discord bot and built a TypeScript/React app for registration and planning.",
+  "title": "Automation Tool",
+  "subtitle": "Developer Productivity",
+  "description": "Built an automation tool to streamline development workflows and improve team productivity.",
   "interval": "2023",
   "logo": "/portfolio/logos/project-card.svg",
   "order": 3,
-  "topics": ["Python", "TypeScript/React", "Automation", "Management"]
+  "topics": ["Python", "TypeScript", "Automation", "DevOps"]
 }

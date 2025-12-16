@@ -1,9 +1,9 @@
 {
-  "title": "Research Intern",
-  "subtitle": "ÉTS · LATIS Lab",
-  "description": "Engineered a MATLAB library for geometric analysis of ultrasound tongue contours and benchmarked it against lab tools.",
-  "interval": "2024",
+  "title": "Junior Developer",
+  "subtitle": "Example Company · Development Team",
+  "description": "Developed web applications and APIs using modern frameworks, contributed to code reviews, and improved development workflows.",
+  "interval": "2022 – 2023",
   "logo": "/portfolio/logos/ets.svg",
   "order": 3,
-  "topics": ["MATLAB", "Signal processing", "Benchmarking"]
+  "topics": ["JavaScript", "API development", "Git"]
 }

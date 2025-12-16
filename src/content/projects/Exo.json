@@ -1,15 +1,15 @@
 {
-  "title": "SYNAPSÉTS Biotechnology Club",
-  "subtitle": "Exoskeleton Software Lead",
-  "description": "Firmware development for a powered leg exoskeleton (STM32, C++), fusing EMG/IMU/force sensor data and intent recognition. ",
+  "title": "Example Web Application",
+  "subtitle": "Full-Stack Project",
+  "description": "A modern web application built with React and Node.js, featuring user authentication, real-time updates, and responsive design.",
   "interval": "2024 – Present",
   "logo": "/portfolio/logos/project-card.svg",
   "order": 1,
   "topics": [
-    "C++",
-    "STM32",
-    "Embedded systems",
-    "Biomechanics",
-    "Machine learning"
+    "React",
+    "Node.js",
+    "TypeScript",
+    "MongoDB",
+    "REST API"
   ]
 }

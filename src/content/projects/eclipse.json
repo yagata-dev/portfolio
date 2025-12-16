@@ -1,9 +1,9 @@
 {
-  "title": "ECLIPSE Solar Vehicle Club",
-  "subtitle": "Telemetry & Firmware",
-  "description": "Designed and routed PCBs for telemetry/BMS, wrote STM32 firmware for power and CAN communication, and coordinated media/logistics for solar vehicle competition.",
+  "title": "Open Source Contribution",
+  "subtitle": "Community Project",
+  "description": "Contributed to an open source project, implementing new features and fixing bugs in the codebase.",
   "interval": "2021 – 2023",
   "logo": "/portfolio/logos/project-card.svg",
   "order": 4,
-  "topics": ["C/C++", "PCB design", "CAN bus"]
+  "topics": ["Python", "Open Source", "Git"]
 }

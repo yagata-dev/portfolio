@@ -1,0 +1,6 @@
+{
+  "title": "About This Site",
+  "subtitle": "Built with Astro",
+  "description": "This is a portfolio website built with Astro, a modern web framework for building fast, content-focused websites.",
+  "order": 1
+}

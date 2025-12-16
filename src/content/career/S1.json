@@ -1,9 +1,9 @@
 {
-  "title": "Optical Product Development Intern",
-  "subtitle": "Belden",
-  "description": "Automated Keyence 3D system workflows with Python, ran validation/qualification tests on optical fiber products, and authored detailed test reports.",
+  "title": "Software Engineering Intern",
+  "subtitle": "Tech Company Inc.",
+  "description": "Built features for web applications using React and Node.js, implemented testing automation, and contributed to the development pipeline.",
   "interval": "2022",
   "logo": "/portfolio/logos/Belden.svg",
   "order": 5,
-  "topics": ["Optical fiber", "Testing Automation"]
+  "topics": ["React", "Node.js", "Testing"]
 }

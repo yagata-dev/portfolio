@@ -1,9 +1,9 @@
 {
-  "title": "SYNAPSÉTS Biotechnology Club",
-  "subtitle": "Prosthetic arm & VR Neurofeedback Developer",
-  "description": "Built EEG signal filtering/classification for a prosthetic arm and a Unity VR neurofeedback system that maps EEG to in-game actions.",
+  "title": "Mobile App Project",
+  "subtitle": "Cross-Platform Development",
+  "description": "A mobile application built with React Native, providing features for task management and collaboration.",
   "interval": "2023 – 2024",
   "logo": "/portfolio/logos/project-card.svg",
   "order": 2,
-  "topics": ["EEG", "Python", "Unity/C#"]
+  "topics": ["React Native", "JavaScript", "Mobile Development"]
 }

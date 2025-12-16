@@ -1,9 +1,9 @@
 {
-  "title": "Teaching Assistant",
-  "subtitle": "ÉTS · Electrical Engineering Department",
-  "description": "Mentor 30+ students per semester in C programming, labs, and client-server development using Linux, GDB, Valgrind, and Git.",
-  "interval": "2024 – Present",
+  "title": "Software Developer",
+  "subtitle": "Example Company · Engineering Team",
+  "description": "Develop and maintain web applications using modern frameworks and best practices.",
+  "interval": "2023 – Present",
   "logo": "/portfolio/logos/ets.svg",
   "order": 1,
-  "topics": ["C programming", "Teaching", "Systems debugging"]
+  "topics": ["Web development", "TypeScript", "React"]
 }
