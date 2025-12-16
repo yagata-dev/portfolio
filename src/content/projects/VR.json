@@ -3,7 +3,7 @@
   "subtitle": "Prosthetic arm & VR Neurofeedback Developer",
   "description": "Built EEG signal filtering/classification for a prosthetic arm and a Unity VR neurofeedback system that maps EEG to in-game actions.",
   "interval": "2023 – 2024",
-  "logo": "/logos/project-card.svg",
+  "logo": "/portfolio/logos/project-card.svg",
   "order": 2,
   "topics": ["EEG", "Python", "Unity/C#"]
 }

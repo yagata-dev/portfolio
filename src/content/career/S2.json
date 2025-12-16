@@ -3,7 +3,7 @@
   "subtitle": "ÉTS · LATIS Lab",
   "description": "Engineered a MATLAB library for geometric analysis of ultrasound tongue contours and benchmarked it against lab tools.",
   "interval": "2024",
-  "logo": "/logos/ets.svg",
+  "logo": "/portfolio/logos/ets.svg",
   "order": 3,
   "topics": ["MATLAB", "Signal processing", "Benchmarking"]
 }
