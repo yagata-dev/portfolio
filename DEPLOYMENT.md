@@ -55,3 +55,13 @@ The deployment workflow is configured in `.github/workflows/deploy.yml` and will
 - Deploy to GitHub Pages
 
 You can also manually trigger the deployment from the Actions tab using the "Run workflow" button.
+
+## What Was Fixed
+
+This repository had deployment issues that have been resolved:
+
+1. **Missing `.nojekyll` file** - Added to ensure GitHub Pages serves files with underscores (like `_astro/` directory)
+2. **Incorrect asset paths** - All asset paths (favicon, logos) now correctly include the `/portfolio` base URL
+3. **Documentation** - Added comprehensive deployment instructions
+
+The main issue preventing deployment is that GitHub Pages needs to be enabled in the repository settings (see Step 1 above).
