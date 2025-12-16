@@ -10,8 +10,5 @@
   },
   "dependencies": {
     "astro": "^5.15.1"
-  },
-  "devDependencies": {
-    "@astrojs/github": "^5.0.3"
   }
 }
