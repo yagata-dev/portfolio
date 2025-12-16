@@ -1,0 +1,13 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Project logo">
+  <defs>
+    <linearGradient id="gradProjectCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+  <rect x="14" y="16" width="92" height="88" rx="14" fill="url(#gradProjectCard)"/>
+  <path d="M36 44h48M36 60h32M36 76h20" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+  <circle cx="42" cy="44" r="6" fill="#d97706" opacity="0.9"/>
+  <circle cx="42" cy="60" r="6" fill="#d97706" opacity="0.9"/>
+  <circle cx="42" cy="76" r="6" fill="#d97706" opacity="0.9"/>
+</svg>

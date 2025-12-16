@@ -1,0 +1,9 @@
+{
+  "title": "Research Assistant",
+  "subtitle": "ÉTS · LATIS Lab",
+  "description": "Developed C++ acquisition software for synchronized ultrasound/audio data, automated MATLAB analysis, and managed end-to-end data lifecycle.",
+  "interval": "2023 – 2024",
+  "logo": "/logos/ets.svg",
+  "order": 4,
+  "topics": ["MATLAB", "Python", "Signal analysis"]
+}

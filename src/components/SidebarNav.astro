@@ -1,0 +1,27 @@
+---
+type SectionNav = {
+  slug: string;
+  data: {
+    title: string;
+    order: number;
+  };
+};
+
+const { sections = [] }: { sections?: SectionNav[] } = Astro.props;
+---
+
+<aside class="sidebar" id="sidebar-nav">
+  <nav aria-label="Primary navigation">
+    <ul>
+      {
+        sections.map((section) => (
+          <li>
+            <a href={`#${section.slug}`}>
+              {section.slug === "about" ? "Home" : section.data.title}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</aside>

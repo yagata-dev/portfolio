@@ -1,0 +1,11 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Example University logo">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2f60d1"/>
+      <stop offset="100%" stop-color="#7bb2ff"/>
+    </linearGradient>
+  </defs>
+  <rect x="12" y="12" width="96" height="96" rx="12" fill="url(#grad)"/>
+  <path d="M36 78V42l24-12 24 12v36" fill="none" stroke="#ffffff" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M54 84h12" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+</svg>

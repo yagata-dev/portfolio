@@ -1,0 +1,13 @@
+{
+  "institution": "École de Technologie Supérieure",
+  "program": "M.Sc. in Software and Information Engineering",
+  "interval": "2025 – Present",
+  "logo": "/logos/ets.svg",
+  "topics": [
+    "Machine learning",
+    "Phonology",
+    "Signal processing",
+    "Ultrasound imaging"
+  ],
+  "order": 1
+}

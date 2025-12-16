@@ -1,0 +1,9 @@
+{
+  "title": "Software Developer",
+  "subtitle": "ÉTS · Electrical Engineering Department",
+  "description": "Built and deployed a full-stack e-learning platform with an AI tutor (OpenAI + RAG), Django backend, and responsive Bootstrap frontend.",
+  "interval": "2024",
+  "logo": "/logos/ets.svg",
+  "order": 2,
+  "topics": ["Django", "AI tutor", "Full-stack development"]
+}

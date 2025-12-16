@@ -1,0 +1,271 @@
+---
+import SidebarNav from "../components/SidebarNav.astro";
+import { getCollection } from "astro:content";
+import Card from "../components/Card.astro";
+import "../styles/global.css";
+
+const sections = await Promise.all(
+  (await getCollection("sections"))
+    .sort(
+      (a: { data: { order: number } }, b: { data: { order: number } }) =>
+        a.data.order - b.data.order
+    )
+    .map(
+      async (entry: {
+        render: () => Promise<{ Content: any }>;
+        slug: string;
+        data: { title: string; order: number };
+      }) => {
+        const { Content } = await entry.render();
+        return { ...entry, Content };
+      }
+    )
+);
+
+const education = (await getCollection("education")).sort(
+  (a: { data: { order: number } }, b: { data: { order: number } }) =>
+    a.data.order - b.data.order
+);
+
+const aboutCards = (await getCollection("about")).sort(
+  (a: { data: { order: number } }, b: { data: { order: number } }) =>
+    a.data.order - b.data.order
+);
+
+const careerCards = (await getCollection("career")).sort(
+  (a: { data: { order: number } }, b: { data: { order: number } }) =>
+    a.data.order - b.data.order
+);
+
+const publicationCards = (await getCollection("publications")).sort(
+  (a: { data: { order: number } }, b: { data: { order: number } }) =>
+    a.data.order - b.data.order
+);
+
+const projectCards = (await getCollection("projects")).sort(
+  (a: { data: { order: number } }, b: { data: { order: number } }) =>
+    a.data.order - b.data.order
+);
+
+const cardsBySection: Record<
+  string,
+  {
+    data: {
+      title: string;
+      subtitle: string;
+      description?: string;
+      interval?: string;
+      logo?: string;
+      topics?: string[];
+      link?: string;
+    };
+    slug: string;
+  }[]
+> = {
+  about: aboutCards,
+  career: careerCards,
+  publications: publicationCards,
+  projects: projectCards,
+};
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="sidebar-nav"
+    >
+      <span class="nav-toggle__icon" aria-hidden="true">☰</span>
+      <span class="nav-toggle__label">Menu</span>
+    </button>
+    <SidebarNav sections={sections} />
+    <div class="content-area">
+      <main>
+        {
+          sections.map((section, index) => (
+            <section id={section.slug}>
+              {index === 0 ? (
+                <h1>{section.data.title}</h1>
+              ) : (
+                <h2>{section.data.title}</h2>
+              )}
+              <section.Content />
+              {section.slug === "education" && (
+                <div class="card-grid">
+                  {education.map((item) => (
+                    <Card
+                      title={item.data.institution}
+                      subtitle={item.data.program}
+                      interval={item.data.interval}
+                      logo={item.data.logo}
+                      topics={item.data.topics}
+                    />
+                  ))}
+                </div>
+              )}
+              {cardsBySection[section.slug] && section.slug !== "contact" && (
+                <div class="card-grid">
+                  {cardsBySection[section.slug].map((item) => (
+                    <Card
+                      title={item.data.title}
+                      subtitle={item.data.subtitle}
+                      description={item.data.description}
+                      interval={item.data.interval}
+                      logo={
+                        section.slug === "projects" || section.slug === "publications"
+                          ? undefined
+                          : item.data.logo
+                      }
+                      topics={item.data.topics}
+                      link={item.data.link}
+                      variant={
+                        section.slug === "projects" || section.slug === "publications"
+                          ? "stacked"
+                          : "side"
+                      }
+                    />
+                  ))}
+                </div>
+              )}
+              {section.slug === "contact" && (
+                <div class="contact-links">
+                  <a
+                    class="contact-link"
+                    href="mailto:minoru.yoshida.1@ens.etsmtl.ca"
+                  >
+                    Email
+                  </a>
+                  <a
+                    class="contact-link"
+                    href="https://www.linkedin.com/in/minoru-yoshida/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    LinkedIn
+                  </a>
+                </div>
+              )}
+            </section>
+          ))
+        }
+      </main>
+      <footer class="site-footer">
+        <p>© {new Date().getFullYear()} Minoru Yoshida</p>
+      </footer>
+    </div>
+    <script is:inline>
+      const toggle = document.querySelector(".nav-toggle");
+      const nav = document.querySelector("#sidebar-nav");
+      const navLinks = nav ? Array.from(nav.querySelectorAll("a[href^='#']")) : [];
+      const sectionsForSpy = Array.from(document.querySelectorAll("main section[id]"));
+
+      if (toggle && nav) {
+        const icon = toggle.querySelector(".nav-toggle__icon");
+        const label = toggle.querySelector(".nav-toggle__label");
+        const mediaQuery = window.matchMedia("(max-width: 768px)");
+        const closeNav = () => {
+          nav.classList.remove("is-open");
+          document.body.classList.remove("nav-open");
+          toggle.setAttribute("aria-expanded", "false");
+          if (icon) icon.textContent = "☰";
+          if (label) label.textContent = "Menu";
+        };
+
+        toggle.addEventListener("click", (event) => {
+          event.stopPropagation();
+          const isOpen = nav.classList.toggle("is-open");
+          document.body.classList.toggle("nav-open", isOpen);
+          toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+          if (icon) icon.textContent = isOpen ? "✕" : "☰";
+          if (label) label.textContent = isOpen ? "Close" : "Menu";
+        });
+
+        nav.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", (event) => {
+            event.preventDefault();
+            const href = link.getAttribute("href");
+            if (href && href.startsWith("#")) {
+              const target = document.querySelector(href);
+              if (target) {
+                target.scrollIntoView({ behavior: "smooth", block: "start" });
+              }
+            }
+            if (mediaQuery.matches) {
+              closeNav();
+            }
+          });
+        });
+
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") {
+            closeNav();
+          }
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!document.body.classList.contains("nav-open")) return;
+          if (!(event.target instanceof Element)) return;
+          if (nav.contains(event.target) || toggle.contains(event.target))
+            return;
+          closeNav();
+        });
+
+        const syncNavForDesktop = (event) => {
+          if (!event.matches) {
+            closeNav();
+          }
+        };
+
+        if (typeof mediaQuery.addEventListener === "function") {
+          mediaQuery.addEventListener("change", syncNavForDesktop);
+        } else if (typeof mediaQuery.addListener === "function") {
+          mediaQuery.addListener(syncNavForDesktop);
+        }
+      }
+
+      if (navLinks.length && sectionsForSpy.length) {
+        let observer;
+
+        const createObserver = () => {
+          if (observer) observer.disconnect();
+          const offset = Math.floor(window.innerHeight * 0.35);
+          observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (!entry.isIntersecting) return;
+                const id = entry.target.getAttribute("id");
+                navLinks.forEach((link) => {
+                  const isActive = link.getAttribute("href") === `#${id}`;
+                  link.classList.toggle("active", isActive);
+                });
+              });
+            },
+            {
+              rootMargin: `-${offset}px 0px -${offset}px 0px`,
+              threshold: [0.1, 0.3, 0.6],
+            }
+          );
+
+          sectionsForSpy.forEach((section) => observer.observe(section));
+        };
+
+        createObserver();
+
+        let resizeTimeout;
+        window.addEventListener("resize", () => {
+          clearTimeout(resizeTimeout);
+          resizeTimeout = window.setTimeout(createObserver, 200);
+        });
+      }
+    </script>
+  </body>
+</html>

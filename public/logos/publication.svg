@@ -1,0 +1,11 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Publication logo">
+  <defs>
+    <linearGradient id="gradPublication" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect x="14" y="16" width="92" height="88" rx="12" fill="url(#gradPublication)"/>
+  <path d="M36 36h48M36 54h32M36 72h26" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+  <path d="M60 92l-10-12H32c-2.2 0-4-1.8-4-4V28c0-2.2 1.8-4 4-4h56c2.2 0 4 1.8 4 4v48c0 2.2-1.8 4-4 4H70z" stroke="#ffffff" stroke-width="6" stroke-linejoin="round" fill="none" opacity="0.9"/>
+</svg>

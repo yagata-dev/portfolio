@@ -1,0 +1,11 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Talk logo">
+  <defs>
+    <linearGradient id="gradTalk" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect x="12" y="12" width="96" height="96" rx="16" fill="url(#gradTalk)"/>
+  <path d="M36 44h48M36 60h32M36 76h22" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+  <path d="M54 92l-10-12H32c-2.2 0-4-1.8-4-4V32c0-2.2 1.8-4 4-4h56c2.2 0 4 1.8 4 4v44c0 2.2-1.8 4-4 4H66z" stroke="#ffffff" stroke-width="6" stroke-linejoin="round" fill="none" opacity="0.9"/>
+</svg>

@@ -1,0 +1,56 @@
+---
+type Props = {
+  title: string;
+  subtitle?: string;
+  description?: string;
+  interval?: string;
+  logo?: string;
+  topics?: string[];
+  variant?: "side" | "stacked";
+  link?: string;
+};
+
+const {
+  title,
+  subtitle,
+  description,
+  interval,
+  logo,
+  topics = [],
+  variant = "side",
+  link,
+}: Props = Astro.props;
+import "../styles/cards.css";
+---
+
+<article
+  class={`card ${variant === "stacked" ? "card--stacked" : ""} ${
+    !logo && variant !== "stacked" ? "card--no-side" : ""
+  }`}
+>
+  {logo && variant !== "stacked" && (
+    <div class="card__side">
+      <div class="card__logo">
+        <img src={logo} alt={`${title} logo`} />
+      </div>
+    </div>
+  )}
+  <div class="card__body">
+    {subtitle && <p class="card__meta card__meta--lead">{subtitle}</p>}
+    <h3>{title}</h3>
+    {description && <p class="card__meta">{description}</p>}
+    {interval && <p class="card__meta">{interval}</p>}
+    {topics.length > 0 && (
+      <div class="card__topics">
+        {topics.map((topic) => (
+          <span>{topic}</span>
+        ))}
+      </div>
+    )}
+    {link && (
+      <a class="card__link" href={link} target="_blank" rel="noopener noreferrer">
+        View publication
+      </a>
+    )}
+  </div>
+</article>
