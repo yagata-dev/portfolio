@@ -3,7 +3,7 @@
   "subtitle": "Details pending",
   "description": "Link placeholder for IEEE Xplore paper; update title, venue, and year as needed.",
   "interval": "2025",
-  "logo": "/portfolio/logos/publication.svg",
+  "logo": "logos/publication.svg",
   "link": "https://ieeexplore.ieee.org/document/11030638",
   "order": 1,
   "topics": ["Research", "IEEE"]

@@ -3,7 +3,7 @@
   "subtitle": "Discord Bot & Companion Web App",
   "description": "Automated event management and staff coordination with a Python Discord bot and built a TypeScript/React app for registration and planning.",
   "interval": "2023",
-  "logo": "/portfolio/logos/project-card.svg",
+  "logo": "logos/project-card.svg",
   "order": 3,
   "topics": ["Python", "TypeScript/React", "Automation", "Management"]
 }

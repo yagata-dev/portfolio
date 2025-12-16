@@ -3,7 +3,7 @@
   "subtitle": "Telemetry & Firmware",
   "description": "Designed and routed PCBs for telemetry/BMS, wrote STM32 firmware for power and CAN communication, and coordinated media/logistics for solar vehicle competition.",
   "interval": "2021 – 2023",
-  "logo": "/portfolio/logos/project-card.svg",
+  "logo": "logos/project-card.svg",
   "order": 4,
   "topics": ["C/C++", "PCB design", "CAN bus"]
 }

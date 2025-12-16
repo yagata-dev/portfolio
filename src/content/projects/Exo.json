@@ -3,7 +3,7 @@
   "subtitle": "Exoskeleton Software Lead",
   "description": "Firmware development for a powered leg exoskeleton (STM32, C++), fusing EMG/IMU/force sensor data and intent recognition. ",
   "interval": "2024 – Present",
-  "logo": "/portfolio/logos/project-card.svg",
+  "logo": "logos/project-card.svg",
   "order": 1,
   "topics": [
     "C++",

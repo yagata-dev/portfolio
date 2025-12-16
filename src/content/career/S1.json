@@ -3,7 +3,7 @@
   "subtitle": "Belden",
   "description": "Automated Keyence 3D system workflows with Python, ran validation/qualification tests on optical fiber products, and authored detailed test reports.",
   "interval": "2022",
-  "logo": "/portfolio/logos/Belden.svg",
+  "logo": "logos/Belden.svg",
   "order": 5,
   "topics": ["Optical fiber", "Testing Automation"]
 }
